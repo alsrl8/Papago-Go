@@ -15,11 +15,11 @@ import (
 )
 
 func getNaverClientId() string {
-	return os.Getenv("X-Naver-Client-Id")
+	return os.Getenv("X_Naver_Client_Id")
 }
 
 func getNaverClientSecret() string {
-	return os.Getenv("X-Naver-Client-Secret")
+	return os.Getenv("X_Naver_Client_Secret")
 }
 
 func translate(src LangCode, tgt LangCode, text string) string {
